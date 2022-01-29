@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Page</title>
+    </head>
+    <link rel="stylesheet" href="labTestPage-Styling.css">
+    <body>
+        <section>
+            <div>
+                <header>
+                    Fill the details in form
+                </header>
+                
+                <form action="qwerty" method="post">
+                    <h2 class="heading">1. Your Contact Details</h2>
+                    <container>
+                        <label class="label" for="fullname"> Full Name</label><br />
+                        <input type="text" class="input" id="fullname" name="fullname" pattern="[A-Z]{3,40}" title="(1)Name should be in UPPERCASE only e.g JOHN. 
+                        (2)min 3 letters required, max 40 letters 
+                        (3)Special chracters not allowed" required />
+                    </container>
+                    <container>
+                        <label class="label" for="id"> Patient Id if exists</label><br />
+                        <input type="number" class="input" id="id" min="100" max="100000" name="patient id" required />
+                    </container>
+                    <container>
+                        <label class="label" for="num"> Contact No.</label><br />
+                        <input type="tel" class="input" id="num" name="phone" pattern="[0-9]{10}" title="Enter 10 digit mob num only" required />
+                    </container>
+                    <container>
+                        <label class="label" for="email"> Email-Id </label><br />
+                        <input type="email" class="input" id="email" name="email" required />
+                    </container>
+
+
+                    <h2 class="heading">2. Address Details</h2>
+                    <container>
+                        <label class="label" for="h.no."> House Number</label><br />
+                        <input type="number" class="input" id="h.no." min="1" name="housenumber" required />
+                    </container>
+                    <container>
+                        <label class="label" for="street"> Street</label><br />
+                        <input type="text" class="input" id="street"  name="street" required />
+                    </container>
+                    <container>
+                        <label class="label" for="area"> Area</label><br />
+                        <input type="text" class="input" id="area" name="Area" required />
+                    </container>
+                    <br /><br />
+                    <label class="label" for="district"> <b>District</b></label><br /><br />
+                    <select name="district" id="district" title="select any one option" required>
+                        <option value="">Choose</option>
+                        <option value="Ambala">Ambala</option>
+                        <option value="Bareilly">Bareilly</option>
+                        <option value="Chandausi">Chandausi</option>
+                        <option value="Devnagri">Devnagri</option>
+                        <option value="Itawaha">Itawaha</option>
+                        <option value="Moradabad">Moradabad</option>
+                        <option value="ramnagar">Ramnagar</option>
+                        <option value="KA">Kachla</option>
+                        <option value="AV">AnandVihar</option>
+                        <option value="kau">Kaushambi</option>
+                        <option value="Zehar">Zehar</option>
+                    </select>
+
+
+                    <h2 class="heading">3. Choose the test type<span>(Check atleast one box)</span></h2>
+                    <input type="checkbox" class="ip" id="CBC" name="option1"  />
+                    <label class="ck" for="CBC"> CBC</label><br />
+                    <input type="checkbox" class="ip" id="urine" name="urine"  />
+                    <label class="ck" for="urine"> Complete Urine</label><br />
+                    <input type="checkbox" class="ip" id="lp" name="lp"  />
+                    <label class="ck" for="lp"> Lipid Profile</label><br />
+                    <input type="checkbox" class="ip" id="rt" name="rt"  />
+                    <label class="ck" for="rt"> RT-PCR</label><br />
+                    <input type="checkbox" class="ip" id="tsh" name="tsh"  />
+                    <label class="ck" for="tsh"> Thyroid Stimulating harmone(TSH)</label><br />
+
+
+                    <h2 class="heading">4. Do you want a hard copy of report also ?</h2>
+                    <label class="radio" for="y"> Yes</label>
+                    <input type="radio" class="ipt" id="y" name="option" required /><br />
+                    <label class="radio" for="n"> No</label>
+                    <input type="radio" class="ipt" id="n" name="option" required />
+
+
+                    <h2 class="heading">5. Select your comfortable Date and Time.</h2>
+                    <label class="label" for="date"> Date</label>
+                    <input type="date" class="input" id="date" name="date" required /><br /><br />
+                    <label class="label" for="time"> Time</label>
+                    <input type="time" class="input" id="time" name="time" required /><br /><br />
+
+                    <input class="reset" type="reset" value="Reset" />
+                    <button>Submit</button>
+                </form>
+            </div>
+
+            <p>
+                <img src"Images/Lab-Test/lab-test.jpg" />
+            </p>
+        </section>   
+    </body>
+</html>
